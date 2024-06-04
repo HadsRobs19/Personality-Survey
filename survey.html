@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Hadassah Roberts</title>
+    <script src="js/process_form.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Survey: make a basic "cat or dog" survey -->
+    <!-- Title for the survey (i used class because it is just for styling) -->
+
+    <div class="section_line">
+        <div class="line1">
+            <hr>
+        </div>
+        <div class="line2">
+            <hr>
+        </div>
+    </div>
+
+    <div class="survey_title">
+        <h2>Personality Survey: Cats or Dogs?</h2>
+    </div>
+
+    <div class="section_line">
+        <div class="line1">
+            <hr>
+        </div>
+        <div class="line2">
+            <hr>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <p>This is a very interesting ad.</p>
+    </div>
+    <form action="process.php" method="post" name="myForm">
+
+        <!-- Personal info fieldset: gather person information on users first -->
+        <fieldset>
+            <legend>First, Lets Learn a Bit About You!</legend>
+            <div id="firstName">
+                <label for="user_first_name">First Name:</label>
+                <input id="user_first_name" type="text" name="firstname" value="" />
+            </div>
+            <div id="lastName">
+                <label for="user_last_name">Last Name:</label>
+                <input id="user_last_name" type="text" name="lastname" value="" />
+            </div>
+            <div id="email">
+                <label for="user_email_input">Email:</label>
+                <input id="user_email_input" type="text" name="user_email" value="" />
+            </div>
+            <div id="phone">
+                <label for="user_phone_number">Phone Number:</label>
+                <input id="user_phone_number" type="text" name="user_phone" value="" />
+            </div>
+
+            <div id="url">
+                <label for="user_url_input">URL</label>
+                <input id="user_url_input" type="text" name="user_url">
+            </div>
+        </fieldset>
+
+        <!-- Colors fieldset: user can pick 1 color they like the most -->
+        <fieldset>
+            <legend>Are You A Cat Person or A Dog Person? Let's Find Out!</legend>
+            <h3>What Color Do You Like the Most?</h3>
+            <div id="green1">
+                <label for="green_survey">Green</label>
+                <input id="green_survey" type="radio" name="color" value="green" />
+            </div>
+            <div id="yellow1">
+                <label for="yellow_survey">Yellow</label>
+                <input id="yellow_survey" type="radio" name="color" value="yellow" />
+            </div>
+            <div id="red1">
+                <label for="red_survey">Red</label>
+                <input id="red_survey" type="radio" name="color" value="red" />
+            </div>
+            <div id="blue1">
+                <label for="blue_survey">Blue</label>
+                <input id="blue_survey" type="radio" name="color" value="blue" />
+            </div>
+
+            <!-- Activities fieldset: User can choose only 2 (IMPORTANT) activities they enjoy doing -->
+            <h3>Choose an Activity You Like The Most</h3>
+            <div id="item1">
+                <label for="item1_survey">Read Your Favorite Book</label>
+                <input id="item1_survey" type="radio" name="activity" value="read" />
+            </div>
+            <div id="item2">
+                <label for="item2_survey">Go to a Local Concert</label>
+                <input id="item2_survey" type="radio" name="activity" value="concert" />
+            </div>
+            <div id="item3">
+                <label for="item3_survey">Go on a Nice Hike</label>
+                <input id="item3_survey" type="radio" name="activity" value="hike" />
+            </div>
+            <div id="item4">
+                <label for="item4_survey">Bar Hoping</label>
+                <input id="item4_survey" type="radio" name="activity" value="bar" />
+            </div>
+
+            <!-- Preference fieldset: Basic question over user's preferance over being alone or with people -->
+            <h3>How Would You Describe Yourself?</h3>
+            <div id="intro">
+                <label for="intro_survey">I Am More of a Quiet Person </label>
+                <input id="intro_survey" type="radio" name="describe" value="alone" />
+            </div>
+            <div id="extro">
+                <label for="extro_survey">I Am More of a Social Person</label>
+                <input id="extro_survey" type="radio" name="describe" value="people" />
+            </div>
+        </fieldset>
+        <!-- Submit and reset buttons below all field sets -->
+        <div class="enter">
+            <input id="submit_button" class="button" type="submit" name="submit" value="Submit" />
+            <input id="reset_button" class="button2" type="reset" name="reset" value="Clear Form" />
+        </div>
+
+        <div id="bannerSpot"></div>
+        <div id="personInfoSpot"></div>
+    </form>
+    <footer>
+        <div class="section_line">
+            <div class="line1">
+                <hr>
+            </div>
+            <div class="line2">
+                <hr>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p>Created for DIG 3716C by Hadassah Roberts</p>
+        </div>
+
+        <div class="section_line">
+            <div class="line1">
+                <hr>
+            </div>
+            <div class="line2">
+                <hr>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

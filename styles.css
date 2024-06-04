@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #858c84;
+    --title-color: #776b91;
+    --text-color: #44382b;
+    --legend-color: #6E604C;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.survey_title {
+    background-color: var(--title-color);
+
+
+}
+
+.survey_title h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    color: var(--text-color);
+}
+
+.line1 {
+    height: 3px;
+    background-color: black;
+    padding-right: -20px;
+}
+
+.line2 {
+    height: 3px;
+    background-color: black;
+    padding-right: -20px;
+}
+
+.sidebar {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    height: 150px;
+    background-color: gray;
+}
+
+.sidebar p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--text-color);
+}
+
+form {
+    padding-top: 55px;
+}
+
+fieldset {
+    background-color: var(--title-color);
+}
+
+legend {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--text-color);
+}
+
+.foot {
+    font-size: 15px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
